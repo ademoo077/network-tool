@@ -1,48 +1,64 @@
-# Network Tool
+# 🌐 Hezil Network Tool 🛠️
 
-**Network Tool** est un script Python permettant de gérer les interfaces réseau sur un système Linux. Il offre des fonctionnalités telles que la visualisation et la modification des adresses IP, l'affichage des adresses MAC, ainsi que l'activation et la désactivation des interfaces réseau.
+Bienvenue à **Hezil Network Tool** ! Un outil puissant conçu pour gérer et manipuler les interfaces réseau sur Linux. Ce script, écrit en Python, vous permet d'afficher l'adresse IP et MAC, de changer les adresses IP, et même de gérer l'état des interfaces réseau. 🔧
 
-## Fonctionnalités
+## 🚀 Fonctionnalités
 
-- **Voir l'adresse IP** : Affiche l'adresse IP actuelle d'une interface spécifiée.
-- **Changer l'adresse IP** : Permet de modifier l'adresse IP d'une interface réseau.
-- **Voir l'adresse MAC** : Affiche l'adresse MAC de l'interface réseau spécifiée.
-- **Activer une interface réseau** : Active une interface réseau.
-- **Désactiver une interface réseau** : Désactive une interface réseau.
+### 🔍 1. Visualiser l'adresse IP
+Vous pouvez facilement afficher l'adresse IP actuelle d'une interface réseau. 🖥️ Que ce soit pour l'interface Ethernet (`eth0`) ou une interface Wi-Fi (`wlan0`), ce script le fait pour vous en un clin d'œil.
 
-## Prérequis
+### 🔄 2. Changer l'adresse IP
+Besoin de changer rapidement l'adresse IP de votre interface ? Pas de souci ! 🆕 Utilisez simplement l'option pour définir une nouvelle adresse IP sur l'interface de votre choix. Parfait pour les tests de réseau ou les configurations avancées.
 
-Avant d'utiliser cet outil, assurez-vous d'avoir installé Python 3 et les droits d'accès appropriés pour exécuter des commandes réseau. De plus, le module `termcolor` doit être installé pour la coloration de la sortie.
+### 🛡️ 3. Visualiser l'adresse MAC
+Ce script permet également d'afficher l'adresse MAC de n'importe quelle interface réseau. 🔐 L'adresse MAC (Media Access Control) est unique et essentielle dans la communication réseau.
 
-Vous pouvez installer `termcolor` avec la commande suivante :
+### ⚡ 4. Activer une interface réseau
+En une seule commande, vous pouvez activer une interface réseau désactivée. 📡
 
+### 📴 5. Désactiver une interface réseau
+À l'inverse, vous pouvez désactiver une interface réseau facilement. Cela peut être pratique lorsque vous avez besoin de déconnecter temporairement une interface.
+
+### ❌ 6. Quitter l'outil
+Quittez proprement l'outil avec cette option. 🛑
+
+## 🎯 Utilisation
+
+### Installation
+
+Pour utiliser cet outil, vous devez d'abord cloner le dépôt GitHub :
+
+```bash
+git clone https://github.com/ademoo077/network-tool.git
+cd network-tool
+```
+Installez les dépendances requises avec pip :
 ```bash
 pip install termcolor
 ```
-## Installation 
-Cloner le dépôt :
+## Exécution
+Lancer l'outil avec Python :
+Installez les dépendances requises avec pip :
 ```bash
-git clone https://github.com/ademoo077/network-tool.git
+python3 network_tool.py
 ```
-Naviguer vers le répertoire du projet :
-```bash
-cd network-tool
-```
-## Utilisation 
-Pour exécuter l'outil, assurez-vous que vous êtes dans le répertoire du projet, puis lancez le script:
-```bash
-python3 network.py
-```
-## Menu des options
-Une fois lancé, l'outil affichera un menu avec les options suivantes :
-
-- **Voir l'adresse IP** : Saisissez le nom de l'interface (ex. eth0, wlan0) pour voir l'adresse IP actuelle.
-- **Changer l'adresse IP** : Saisissez le nom de l'interface et la nouvelle adresse IP pour la changer.
-- **Voir l'adresse MAC** : Saisissez le nom de l'interface pour afficher l'adresse MAC.
-- **Activer une interface réseau** : Saisissez le nom de l'interface que vous souhaitez activer.
-- **Désactiver une interface réseau** : Saisissez le nom de l'interface que vous souhaitez désactiver.
-- **Quitter** : Quitte l'outil.
-
-## Remarques
-Droits d'accès : Certaines fonctionnalités nécessitent des privilèges root. Exécutez le script avec sudo si nécessaire.
-Compatibilité : Cet outil est conçu pour fonctionner sous Linux et peut ne pas être compatible avec d'autres systèmes d'exploitation.
+## 📜 Menu Interactif
+Voici à quoi ressemble le menu d'accueil :
+🌐 Hezil Network Tool 🛠️
+1️⃣  Voir l'adresse IP
+2️⃣  Changer l'adresse IP
+3️⃣  Voir l'adresse MAC
+4️⃣  Activer une interface réseau
+5️⃣  Désactiver une interface réseau
+6️⃣  Quitter
+Sélectionnez simplement une option pour interagir avec le réseau.
+## 📢 Avertissement
+- **🛑 Attention**: Les commandes de ce script nécessitent des droits sudo. Assurez-vous d'avoir les autorisations suffisantes avant de lancer certaines opérations, comme le changement d'adresse IP ou l'activation/désactivation d'une interface
+## 🛠️ Technologies Utilisées
+- **Python** : Langage principal pour le développement de l'outil.
+- **subprocess** : Pour exécuter des commandes système Linux.
+- **termcolor** : Pour colorer les sorties dans le terminal.
+- **Regex (re)** : Pour extraire les adresses IP des interfaces.
+##🧑‍💻 Contribution
+Ce projet est ouvert aux contributions ! Si vous avez des idées pour améliorer cet outil ou souhaitez corriger des bugs, n'hésitez pas à faire une pull request. 🙌
+🎉 Merci d'utiliser Hezil Network Tool et bonne gestion de vos interfaces réseau ! 🌐💻
