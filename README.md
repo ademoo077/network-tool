@@ -75,6 +75,6 @@ Ce projet est ouvert aux contributions ! Si vous avez des idées pour améliorer
 
 Voici une capture d'écran de l'outil en action :
 
-![Hezil Network Tool Screenshot](./network-tool/Capture.png)
+![Hezil Network Tool Screenshot](./Capture.png)
 
 
