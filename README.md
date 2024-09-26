@@ -71,3 +71,9 @@ Sélectionnez simplement une option pour interagir avec le réseau.
 ##🧑‍💻 Contribution
 Ce projet est ouvert aux contributions ! Si vous avez des idées pour améliorer cet outil ou souhaitez corriger des bugs, n'hésitez pas à faire une pull request. 🙌
 🎉 Merci d'utiliser Hezil Network Tool et bonne gestion de vos interfaces réseau ! 🌐💻
+## 🖼️ Capture d'écran de Hezil Network Tool
+
+Voici une capture d'écran de l'outil en action :
+
+![Hezil Network Tool Screenshot](./Capture d'écran 2024-09-26 195510.png)
+
